@@ -28,7 +28,7 @@
     ],
     "homepage": "https://github.com/sedkiTN/mongodb-laravel-medialibrary",
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "ext-exif": "*",
         "ext-fileinfo": "*",
         "ext-json": "*",
