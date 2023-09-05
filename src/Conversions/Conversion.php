@@ -4,11 +4,11 @@ namespace sedkiTN\MediaLibrary\Conversions;
 
 use BadMethodCallException;
 use Illuminate\Support\Traits\Conditionable;
-use sedkiTN\Image\Manipulations;
+use Spatie\Image\Manipulations;
 use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 use sedkiTN\MediaLibrary\Support\FileNamer\FileNamer;
 
-/** @mixin \sedkiTN\Image\Manipulations */
+/** @mixin \Spatie\Image\Manipulations */
 class Conversion
 {
     use Conditionable;

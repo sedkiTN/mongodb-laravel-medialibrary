@@ -5,7 +5,7 @@ namespace sedkiTN\MediaLibrary\Conversions;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use sedkiTN\Image\Manipulations;
+use Spatie\Image\Manipulations;
 use sedkiTN\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
 use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 
