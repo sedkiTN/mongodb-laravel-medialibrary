@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\Feature\S3Integration;
+namespace sedkiTN\MediaLibrary\Tests\Feature\S3Integration;
 
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\PathGenerator\PathGenerator;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\Support\PathGenerator\PathGenerator;
 
 class S3TestPathGenerator implements PathGenerator
 {

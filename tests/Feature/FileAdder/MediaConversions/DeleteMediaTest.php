@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\File;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithoutMediaConversions;
+use sedkiTN\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithoutMediaConversions;
 
 beforeEach(function () {
     foreach (range(1, 3) as $index) {

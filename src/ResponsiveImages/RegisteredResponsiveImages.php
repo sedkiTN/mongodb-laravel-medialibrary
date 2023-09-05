@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\ResponsiveImages;
+namespace sedkiTN\MediaLibrary\ResponsiveImages;
 
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 
 class RegisteredResponsiveImages
 {

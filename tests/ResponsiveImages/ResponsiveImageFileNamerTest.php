@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\MediaLibrary\Tests\TestSupport\TestFileNamer;
+use sedkiTN\MediaLibrary\Tests\TestSupport\TestFileNamer;
 
 beforeEach(function () {
     config()->set("media-library.file_namer", TestFileNamer::class);

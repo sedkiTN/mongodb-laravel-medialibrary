@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support\PathGenerator;
+namespace sedkiTN\MediaLibrary\Support\PathGenerator;
 
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 
 interface PathGenerator
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support\UrlGenerator;
+namespace sedkiTN\MediaLibrary\Support\UrlGenerator;
 
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidUrlGenerator;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
+use sedkiTN\MediaLibrary\Conversions\ConversionCollection;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\InvalidUrlGenerator;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
 
 class UrlGeneratorFactory
 {

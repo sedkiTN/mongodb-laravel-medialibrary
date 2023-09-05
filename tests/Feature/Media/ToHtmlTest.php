@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithCustomLoadingAttribute;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithCustomLoadingAttribute;
 use Spatie\Snapshots\MatchesSnapshots;
 
 uses(MatchesSnapshots::class);

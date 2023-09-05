@@ -1,24 +1,24 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections;
+namespace sedkiTN\MediaLibrary\MediaCollections;
 
 use Closure;
 use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Traits\Macroable;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\Image as ImageGenerator;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileUnacceptableForCollection;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\UnknownType;
-use Spatie\MediaLibrary\MediaCollections\File as PendingFile;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob;
-use Spatie\MediaLibrary\Support\File;
-use Spatie\MediaLibrary\Support\RemoteFile;
+use sedkiTN\MediaLibrary\Conversions\ImageGenerators\Image as ImageGenerator;
+use sedkiTN\MediaLibrary\HasMedia;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\FileUnacceptableForCollection;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\UnknownType;
+use sedkiTN\MediaLibrary\MediaCollections\File as PendingFile;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob;
+use sedkiTN\MediaLibrary\Support\File;
+use sedkiTN\MediaLibrary\Support\RemoteFile;
 use Spatie\MediaLibraryPro\Models\TemporaryUpload;
 use Symfony\Component\HttpFoundation\File\File as SymfonyFile;
 use Symfony\Component\HttpFoundation\File\UploadedFile;

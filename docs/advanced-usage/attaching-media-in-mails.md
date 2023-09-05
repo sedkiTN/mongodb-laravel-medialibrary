@@ -10,7 +10,7 @@ Laravel allows [to attach all sorts of classes](https://laravel.com/docs/9.x/mai
 namespace App\Mails;
 
 use Illuminate\Mail\Mailable;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 use App\Models\Order;
 
 class OrderConfirmationMail extends Mailable
@@ -22,7 +22,7 @@ class OrderConfirmationMail extends Mailable
 
     public function build()
     {
-        /** @var \Spatie\MediaLibrary\MediaCollections\Models\Media $invoice */
+        /** @var \sedkiTN\MediaLibrary\MediaCollections\Models\Media $invoice */
         $invoice = $this->order->getFirstMedia('invoice')
     
         return $this
@@ -40,7 +40,7 @@ You can call  `mailAttachment()` on a `Media` model to get back an `Attachment` 
 namespace App\Mails;
 
 use Illuminate\Mail\Mailable;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 use App\Models\BlogPost;
 
 class BlogPostThumbnailMail extends Mailable
@@ -52,7 +52,7 @@ class BlogPostThumbnailMail extends Mailable
 
     public function build()
     {
-        /** @var \Spatie\MediaLibrary\MediaCollections\Models\Media $mediaItem */
+        /** @var \sedkiTN\MediaLibrary\MediaCollections\Models\Media $mediaItem */
         $mediaItem = $this->blogPost->getFirstMedia();
         
         // pass the conversion name

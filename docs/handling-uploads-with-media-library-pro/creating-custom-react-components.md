@@ -7,7 +7,7 @@ Both the Vue and React UI components are built on top of the same core, with a l
 
 To create your own UI components that hook into the Media Library Pro JS core, you can use the `useMediaLibrary` hook in a functional component. If you are building a class component, there are several tutorials available online on how to wrap a custom hook in a higher-order component for use in class components.
 
-For more extensive examples, [see the pre-built UI components on GitHub](https://github.com/spatie/laravel-medialibrary-pro/blob/master/resources/js)
+For more extensive examples, [see the pre-built UI components on GitHub](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/blob/master/resources/js)
 
 ## Getting started
 
@@ -57,8 +57,8 @@ You can find a full list of available parameters and exposed variables for the h
 
 For extensive examples you can have a look at the source of the pre-built UI components:
 
--   [React attachment component](https://github.com/spatie/laravel-medialibrary-pro/tree/master/resources/js/media-library-pro-react-attachment)
--   [React collection component](https://github.com/spatie/laravel-medialibrary-pro/tree/master/resources/js/media-library-pro-react-collection)
+-   [React attachment component](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/tree/master/resources/js/media-library-pro-react-attachment)
+-   [React collection component](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/tree/master/resources/js/media-library-pro-react-collection)
 
 ## Helper components
 
@@ -66,7 +66,7 @@ When building your own UI component using the Media Library Pro, you can also ma
 
 ### DropZone
 
-[See code on GitHub](https://github.com/spatie/laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/DropZone.tsx)
+[See code on GitHub](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/DropZone.tsx)
 
 Renderless component that exposes some props needed to render a file dropzone.
 
@@ -89,7 +89,7 @@ Renderless component that exposes some props needed to render a file dropzone.
 
 ### HiddenFields
 
-[See code on GitHub](https://github.com/spatie/laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/HiddenFields.tsx)
+[See code on GitHub](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/HiddenFields.tsx)
 
 Component that renders hidden input fields with the values of the entire MediaLibrary instance's media state. Only needed if you're planning on submitting forms traditionally (not with AJAX).
 
@@ -104,7 +104,7 @@ Component that renders hidden input fields with the values of the entire MediaLi
 
 ### ItemErrors
 
-[See code on GitHub](https://github.com/spatie/laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/ItemErrors.tsx)
+[See code on GitHub](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/ItemErrors.tsx)
 
 Component that renders the errors for one media object.
 
@@ -119,7 +119,7 @@ Component that renders the errors for one media object.
 
 ### ListErrors
 
-[See code on GitHub](https://github.com/spatie/laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/ListErrors.tsx)
+[See code on GitHub](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/ListErrors.tsx)
 
 Component that can render the MediaLibrary instance's invalid media (`mediaLibrary.state.invalidMedia`).
 
@@ -135,7 +135,7 @@ Component that can render the MediaLibrary instance's invalid media (`mediaLibra
 
 ### Thumb
 
-[See code on GitHub](https://github.com/spatie/laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/Thumb.tsx)
+[See code on GitHub](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/Thumb.tsx)
 
 Component to display a file's thumbnail. If no preview for the file exists, it will attempt to display its extension. Also implements the [Uploader](#uploader) component to replace files.
 
@@ -156,7 +156,7 @@ Component to display a file's thumbnail. If no preview for the file exists, it w
 
 ### Uploader
 
-[See code on GitHub](https://github.com/spatie/laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/Uploader.tsx)
+[See code on GitHub](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/Uploader.tsx)
 
 Component used to upload new media objects, or to replace an existing object's file. Is used by the [Thumb](#thumb) component.
 
@@ -177,13 +177,13 @@ Component used to upload new media objects, or to replace an existing object's f
 
 ### Icons
 
-[See code on GitHub](https://github.com/spatie/laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/components/Icons.tsx)
+[See code on GitHub](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/components/Icons.tsx)
 
 Component that sets svg values for the packaged icons, required if you're planning on using the [icon](#icon) component.
 
 ### Icon
 
-[See code on GitHub](https://github.com/spatie/laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/components/Icon.tsx)
+[See code on GitHub](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/components/Icon.tsx)
 
 Renders an icon. Requires [icons](#icons) to be rendered on the page.
 
@@ -198,7 +198,7 @@ Renders an icon. Requires [icons](#icons) to be rendered on the page.
 
 ### IconButton
 
-[See code on GitHub](https://github.com/spatie/laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/components/IconButton.tsx)
+[See code on GitHub](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/components/IconButton.tsx)
 
 Renders a button with an icon. Requires [icons](#icons) to be rendered on the page.
 
@@ -213,7 +213,7 @@ Renders a button with an icon. Requires [icons](#icons) to be rendered on the pa
 
 ### useDragula
 
-[See code on GitHub](https://github.com/spatie/laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/useDragula.ts)
+[See code on GitHub](https://github.com/sedkitn/mongodb-laravel-medialibrary-pro/blob/master/resources/js/media-library-pro-react/src/useDragula.ts)
 
 Custom hook to use [Dragula](https://github.com/bevacqua/react-dragula), to allow sorting of files.
 

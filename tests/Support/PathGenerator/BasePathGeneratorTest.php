@@ -1,10 +1,10 @@
 <?php
 
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator;
-use Spatie\MediaLibrary\Tests\Support\PathGenerator\CustomPathGenerator;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithMorphMap;
+use sedkiTN\MediaLibrary\Conversions\ConversionCollection;
+use sedkiTN\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator;
+use sedkiTN\MediaLibrary\Tests\Support\PathGenerator\CustomPathGenerator;
+use sedkiTN\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
+use sedkiTN\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithMorphMap;
 
 beforeEach(function () {
     $this->config = app('config');

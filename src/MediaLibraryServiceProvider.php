@@ -1,17 +1,17 @@
 <?php
 
-namespace Spatie\MediaLibrary;
+namespace sedkiTN\MediaLibrary;
 
 use Illuminate\Support\ServiceProvider;
-use Spatie\MediaLibrary\Conversions\Commands\RegenerateCommand;
-use Spatie\MediaLibrary\MediaCollections\Commands\CleanCommand;
-use Spatie\MediaLibrary\MediaCollections\Commands\ClearCommand;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
-use Spatie\MediaLibrary\MediaCollections\MediaRepository;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\MediaCollections\Models\Observers\MediaObserver;
-use Spatie\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
-use Spatie\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
+use sedkiTN\MediaLibrary\Conversions\Commands\RegenerateCommand;
+use sedkiTN\MediaLibrary\MediaCollections\Commands\CleanCommand;
+use sedkiTN\MediaLibrary\MediaCollections\Commands\ClearCommand;
+use sedkiTN\MediaLibrary\MediaCollections\Filesystem;
+use sedkiTN\MediaLibrary\MediaCollections\MediaRepository;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Observers\MediaObserver;
+use sedkiTN\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
+use sedkiTN\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
 
 class MediaLibraryServiceProvider extends ServiceProvider
 {

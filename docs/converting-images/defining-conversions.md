@@ -25,9 +25,9 @@ You should add a method called `registerMediaConversions` to your model. In that
 
 ```php
 use MongoDB\Laravel\Eloquent\Model;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\HasMedia;
+use sedkiTN\MediaLibrary\InteractsWithMedia;
 
 class YourModel extends Model implements HasMedia
 {

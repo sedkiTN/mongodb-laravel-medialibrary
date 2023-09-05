@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\MediaLibrary\Conversions\ImageGenerators\Svg;
+use sedkiTN\MediaLibrary\Conversions\ImageGenerators\Svg;
 
 it('can convert a svg', function () {
     $imageGenerator = new Svg();

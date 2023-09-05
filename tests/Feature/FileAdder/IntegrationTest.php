@@ -2,20 +2,20 @@
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Storage;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidBase64Data;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidUrl;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\MimeTypeNotAllowed;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\UnknownType;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Tests\TestSupport\RenameOriginalFileNamer;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use sedkiTN\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\InvalidBase64Data;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\InvalidUrl;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\MimeTypeNotAllowed;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\UnknownType;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\Tests\TestSupport\RenameOriginalFileNamer;
+use sedkiTN\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 it('can add an file to the default collection', function () {

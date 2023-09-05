@@ -1,36 +1,36 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Models;
+namespace sedkiTN\MediaLibrary\MediaCollections\Models;
 
 use DateTimeInterface;
 use Illuminate\Support\Arr;
 use Illuminate\Mail\Attachment;
-use Spatie\MediaLibrary\HasMedia;
+use sedkiTN\MediaLibrary\HasMedia;
 use Illuminate\Support\Collection;
 use MongoDB\Laravel\Eloquent\Model;
-use Spatie\MediaLibrary\Support\File;
+use sedkiTN\MediaLibrary\Support\File;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Contracts\Mail\Attachable;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Responsable;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Support\MediaLibraryPro;
+use sedkiTN\MediaLibrary\Conversions\Conversion;
+use sedkiTN\MediaLibrary\Support\MediaLibraryPro;
 use Spatie\MediaLibraryPro\Models\TemporaryUpload;
-use Spatie\MediaLibrary\Support\TemporaryDirectory;
+use sedkiTN\MediaLibrary\Support\TemporaryDirectory;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
+use sedkiTN\MediaLibrary\MediaCollections\Filesystem;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Spatie\MediaLibrary\MediaCollections\HtmlableMedia;
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\Support\UrlGenerator\UrlGenerator;
-use Spatie\MediaLibrary\Support\UrlGenerator\UrlGeneratorFactory;
-use Spatie\MediaLibrary\MediaCollections\Models\Concerns\HasUuid;
-use Spatie\MediaLibrary\MediaCollections\Models\Concerns\IsSorted;
-use Spatie\MediaLibrary\ResponsiveImages\RegisteredResponsiveImages;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
-use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
-use Spatie\MediaLibrary\MediaCollections\Models\Concerns\CustomMediaProperties;
+use sedkiTN\MediaLibrary\MediaCollections\HtmlableMedia;
+use sedkiTN\MediaLibrary\Conversions\ConversionCollection;
+use sedkiTN\MediaLibrary\Support\UrlGenerator\UrlGenerator;
+use sedkiTN\MediaLibrary\Support\UrlGenerator\UrlGeneratorFactory;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Concerns\HasUuid;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Concerns\IsSorted;
+use sedkiTN\MediaLibrary\ResponsiveImages\RegisteredResponsiveImages;
+use sedkiTN\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Concerns\CustomMediaProperties;
 
 /**
  * @property string $uuid

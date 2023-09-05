@@ -1,6 +1,6 @@
 {
     "name": "sedkitn/mongodb-laravel-medialibrary",
-    "description": "Associate files with Eloquent models",
+    "description": "Associate files with Eloquent models (MongoDB)",
     "license": "MIT",
     "keywords": [
         "sedkiTN",

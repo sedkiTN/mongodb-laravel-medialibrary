@@ -2,8 +2,8 @@
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
-use Spatie\MediaLibrary\Support\MediaStream;
-use Spatie\MediaLibrary\Tests\Feature\S3Integration\S3TestPathGenerator;
+use sedkiTN\MediaLibrary\Support\MediaStream;
+use sedkiTN\MediaLibrary\Tests\Feature\S3Integration\S3TestPathGenerator;
 use Spatie\TemporaryDirectory\TemporaryDirectory;
 
 beforeEach(function () {

@@ -18,7 +18,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 
 class AddGeneratedConversionsToMediaTable extends Migration {
     /**
@@ -69,36 +69,36 @@ class AddGeneratedConversionsToMediaTable extends Migration {
 ```
 
 - rename `conversion_file_namer` key in the `media-library` config to `file_namer`. This will support both the conversions and responsive images from now on. More info [in our docs](https://spatie.be/docs/laravel-medialibrary/v9/advanced-usage/naming-generated-files).
-- You will also need to change the value of this configuration key as the previous class was removed, the new default value is `Spatie\MediaLibrary\Support\FileNamer\DefaultFileNamer::class`
+- You will also need to change the value of this configuration key as the previous class was removed, the new default value is `sedkiTN\MediaLibrary\Support\FileNamer\DefaultFileNamer::class`
 - in several releases of v8 config options were added. We recommend going over your config file in `config/media-library.php` and add any options that are present in the default config file that ships with this package.
 - Media collection serialization has changed to support the newly introduced Media Library Pro components. If you are returning media collections directly from your controllers or serializing them to json manually then you can retain existing behaviour by setting `use_default_collection_serialization` to `true` inside `config/media-library.php`
 
 ## From v7 to v8
 
-- internally the media library has been restructured and nearly all namespaces have changed. Class names remained the same. In your application code hunt to any usages of classes that start with `Spatie\MediaLibrary`. Take a look in the source code of medialibrary what the new namespace of the class is and use that. 
+- internally the media library has been restructured and nearly all namespaces have changed. Class names remained the same. In your application code hunt to any usages of classes that start with `sedkiTN\MediaLibrary`. Take a look in the source code of medialibrary what the new namespace of the class is and use that. 
 - rename `config/medialibrary.php` to `config/media-library.php`
-- update in `config/media-library.php` the `media_model` to `Spatie\MediaLibrary\MediaCollections\Models\Media::class`
+- update in `config/media-library.php` the `media_model` to `sedkiTN\MediaLibrary\MediaCollections\Models\Media::class`
 
 - all medialibrary commands have been renamed from `medialibrary:xxx` to `media-library:xxx`. Make sure to update all media library commands in your console kernel.
-- the `Spatie\MediaLibrary\HasMedia\HasMediaTrait` has been renamed to `Spatie\MediaLibrary\InteractsWithMedia`. Make sure to update this in all models that use media. Also make sure that they implement the `HasMedia` interface, see [Preparing your model](https://spatie.be/docs/laravel-medialibrary/v8/basic-usage/preparing-your-model).
+- the `sedkiTN\MediaLibrary\HasMedia\HasMediaTrait` has been renamed to `sedkiTN\MediaLibrary\InteractsWithMedia`. Make sure to update this in all models that use media. Also make sure that they implement the `HasMedia` interface, see [Preparing your model](https://spatie.be/docs/laravel-medialibrary/v8/basic-usage/preparing-your-model).
 - Add a `conversions_disk` field to the `media` table ( varchar 255 nullable; you'll find the definition in the migrations file of the package) and for each row copy the value of `disk` to `conversions_disk`.
 - Add a `uuid` field to the `media` table ( char 36 nullable) and fill each row with a unique value, preferably a `uuid`
 
 You can use this snippet (in e.g. tinker) to fill the `uuid` field:
 
 ```php
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 Media::cursor()->each(
    fn (Media $media) => $media->update(['uuid' => Str::uuid()])
 );
 ```
 
-- Url generation has been vastly simplified. You should set the `url_generator` in the `media-library` config file to `Spatie\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator::class`. It will be able to handle most disks.
+- Url generation has been vastly simplified. You should set the `url_generator` in the `media-library` config file to `sedkiTN\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator::class`. It will be able to handle most disks.
 - remove the `s3.domain` key from the `media-library` config file
 - spatie/pdf-to-image is now a suggestion dependency. Make sure to install it, if you want to create thumbnails for PDFs or SVGs
 - `registerMediaConversions` and `registerMediaCollections` should now use the  `void` return type.
-- if the `path_generator` key in the `media-library` config file was set to `null`, change the value to `Spatie\MediaLibrary\Support\PathGenerator\DefaultPathGenerator::class`
-- if the `url_generator` key in the `media-library` config file was set to `null`, change the value to `Spatie\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator::class`
+- if the `path_generator` key in the `media-library` config file was set to `null`, change the value to `sedkiTN\MediaLibrary\Support\PathGenerator\DefaultPathGenerator::class`
+- if the `url_generator` key in the `media-library` config file was set to `null`, change the value to `sedkiTN\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator::class`
 - the `rawUrlEncodeFilename` method on `BaseUrlGenerator` has been removed. Remove all calls in your own code to this method.
 - `getConversionFile` on `Conversion` now accepts a `Media` instance instead of a `string`. In normal circumstance you wouldn't have used this function directly.
 - the default collection name for responsive images was changed from `medialibrary_original` to `media_library_original` which requires you to update the `responsive_images` column and rename all generated files with that collection name. This is an example migration of how to do that (**read through the code and make sure it does what you want**):
@@ -106,7 +106,7 @@ Media::cursor()->each(
 use Illuminate\Contracts\Filesystem\Factory;
 use Illuminate\Database\Migrations\Migration;
 use App\Models\Media;
-use Spatie\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
+use sedkiTN\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
 
 class RenameResponsiveImagesCollectionNameInMedia extends Migration
 {
@@ -202,11 +202,11 @@ If you want your own filesystem implementation, you should extend the `Filesyste
 ## From v6 to v7
 
 - add the `responsive_images` column in the media table: `$table->json('responsive_images');`
-- rename the `use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;` interface to `use Spatie\MediaLibrary\HasMedia\HasMedia;`
-- rename the `use Spatie\MediaLibrary\HasMedia\Interfaces\HasMediaConversions;` interface to `use Spatie\MediaLibrary\HasMedia\HasMedia;` as well (the distinction was [removed](https://github.com/spatie/laravel-medialibrary/commit/48f371a7b10cc82bbee5b781ab8784acc5ad0fc3#diff-f12df6f7f30b5ee54d9ccc6e56e8f93e)).
+- rename the `use sedkiTN\MediaLibrary\HasMedia\Interfaces\HasMedia;` interface to `use sedkiTN\MediaLibrary\HasMedia\HasMedia;`
+- rename the `use sedkiTN\MediaLibrary\HasMedia\Interfaces\HasMediaConversions;` interface to `use sedkiTN\MediaLibrary\HasMedia\HasMedia;` as well (the distinction was [removed](https://github.com/spatie/laravel-medialibrary/commit/48f371a7b10cc82bbee5b781ab8784acc5ad0fc3#diff-f12df6f7f30b5ee54d9ccc6e56e8f93e)).
 - all converted files should now start with the name of the original file. One way to achieve this is to navigate to your storage/media folder and run `find -type d -name "conversions" -exec rm -rf {} \;` (bash) to remove all existing converted files and then run `php artisan medialibrary:regenerate` to automatically recreate them with the proper file names. 
-- `Spatie\MediaLibrary\Media` has been moved to `Spatie\MediaLibrary\Models\Media`. Update the namespace import of `Media` accross your app
-- The method definitions of `Spatie\MediaLibrary\Filesystem\Filesystem::add` and `Spatie\MediaLibrary\Filesystem\Filesystem::copyToMediaLibrary` are changed, they now use nullable string typehints for `$targetFileName` and `$type`.
+- `sedkiTN\MediaLibrary\Media` has been moved to `sedkiTN\MediaLibrary\Models\Media`. Update the namespace import of `Media` accross your app
+- The method definitions of `sedkiTN\MediaLibrary\Filesystem\Filesystem::add` and `sedkiTN\MediaLibrary\Filesystem\Filesystem::copyToMediaLibrary` are changed, they now use nullable string typehints for `$targetFileName` and `$type`.
 
 ## From v5 to v6
 
@@ -248,9 +248,9 @@ to
 ## From v2 to v3
 You can upgrade from v2 to v3 by performing these renames in your model that has media.
 
-- `Spatie\MediaLibrary\HasMediaTrait` has been renamed to `Spatie\MediaLibrary\HasMedia\HasMediaTrait`.
-- `Spatie\MediaLibrary\HasMedia` has been renamed to `Spatie\MediaLibrary\HasMedia\Interfaces\HasMediaConversions`
-- `Spatie\MediaLibrary\HasMediaWithoutConversions` has been renamed to `Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia`
+- `sedkiTN\MediaLibrary\HasMediaTrait` has been renamed to `sedkiTN\MediaLibrary\HasMedia\HasMediaTrait`.
+- `sedkiTN\MediaLibrary\HasMedia` has been renamed to `sedkiTN\MediaLibrary\HasMedia\Interfaces\HasMediaConversions`
+- `sedkiTN\MediaLibrary\HasMediaWithoutConversions` has been renamed to `sedkiTN\MediaLibrary\HasMedia\Interfaces\HasMedia`
 
 In the config file you should rename the `filesystem`-option to `default_filesystem`.
 

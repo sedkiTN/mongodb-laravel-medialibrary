@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions;
+namespace sedkiTN\MediaLibrary\Conversions;
 
 use BadMethodCallException;
 use Illuminate\Support\Traits\Conditionable;
-use Spatie\Image\Manipulations;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\FileNamer\FileNamer;
+use sedkiTN\Image\Manipulations;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\Support\FileNamer\FileNamer;
 
-/** @mixin \Spatie\Image\Manipulations */
+/** @mixin \sedkiTN\Image\Manipulations */
 class Conversion
 {
     use Conditionable;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support;
+namespace sedkiTN\MediaLibrary\Support;
 
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FunctionalityNotAvailable;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\FunctionalityNotAvailable;
 use Spatie\MediaLibraryPro\Models\TemporaryUpload;
 
 class MediaLibraryPro

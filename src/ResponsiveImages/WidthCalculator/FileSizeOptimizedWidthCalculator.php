@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\ResponsiveImages\WidthCalculator;
+namespace sedkiTN\MediaLibrary\ResponsiveImages\WidthCalculator;
 
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\Support\ImageFactory;
+use sedkiTN\MediaLibrary\Support\ImageFactory;
 
 class FileSizeOptimizedWidthCalculator implements WidthCalculator
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary;
+namespace sedkiTN\MediaLibrary;
 
 use DateTimeInterface;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
@@ -10,20 +10,20 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Downloaders\DefaultDownloader;
-use Spatie\MediaLibrary\MediaCollections\Events\CollectionHasBeenCleared;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidBase64Data;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidUrl;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\MediaCannotBeDeleted;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\MediaCannotBeUpdated;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\MimeTypeNotAllowed;
-use Spatie\MediaLibrary\MediaCollections\FileAdder;
-use Spatie\MediaLibrary\MediaCollections\FileAdderFactory;
-use Spatie\MediaLibrary\MediaCollections\MediaCollection;
-use Spatie\MediaLibrary\MediaCollections\MediaRepository;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\MediaLibraryPro;
+use sedkiTN\MediaLibrary\Conversions\Conversion;
+use sedkiTN\MediaLibrary\Downloaders\DefaultDownloader;
+use sedkiTN\MediaLibrary\MediaCollections\Events\CollectionHasBeenCleared;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\InvalidBase64Data;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\InvalidUrl;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\MediaCannotBeDeleted;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\MediaCannotBeUpdated;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\MimeTypeNotAllowed;
+use sedkiTN\MediaLibrary\MediaCollections\FileAdder;
+use sedkiTN\MediaLibrary\MediaCollections\FileAdderFactory;
+use sedkiTN\MediaLibrary\MediaCollections\MediaCollection;
+use sedkiTN\MediaLibrary\MediaCollections\MediaRepository;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\Support\MediaLibraryPro;
 use Spatie\MediaLibraryPro\PendingMediaLibraryRequestHandler;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
@@ -113,7 +113,7 @@ trait InteractsWithMedia
      *
      * @param string[] $keys
      *
-     * @return \Spatie\MediaLibrary\MediaCollections\FileAdder[]
+     * @return \sedkiTN\MediaLibrary\MediaCollections\FileAdder[]
      */
     public function addMultipleMediaFromRequest(array $keys): Collection
     {
@@ -123,7 +123,7 @@ trait InteractsWithMedia
     /**
      * Add all files from a request.
      *
-     * @return \Spatie\MediaLibrary\MediaCollections\FileAdder[]
+     * @return \sedkiTN\MediaLibrary\MediaCollections\FileAdder[]
      */
     public function addAllMediaFromRequest(): Collection
     {
@@ -135,7 +135,7 @@ trait InteractsWithMedia
      *
      *
      *
-     * @throws \Spatie\MediaLibrary\MediaCollections\Exceptions\FileCannotBeAdded
+     * @throws \sedkiTN\MediaLibrary\MediaCollections\Exceptions\FileCannotBeAdded
      */
     public function addMediaFromUrl(string $url, array|string ...$allowedMimeTypes): FileAdder
     {
@@ -188,7 +188,7 @@ trait InteractsWithMedia
      * Add a base64 encoded file to the media library.
      *
      *
-     * @throws \Spatie\MediaLibrary\MediaCollections\Exceptions\FileCannotBeAdded
+     * @throws \sedkiTN\MediaLibrary\MediaCollections\Exceptions\FileCannotBeAdded
      *
      * @throws InvalidBase64Data
      */
@@ -487,7 +487,7 @@ trait InteractsWithMedia
      * You may also pass a media object.
      *
      *
-     * @throws \Spatie\MediaLibrary\MediaCollections\Exceptions\MediaCannotBeDeleted
+     * @throws \sedkiTN\MediaLibrary\MediaCollections\Exceptions\MediaCannotBeDeleted
      */
     public function deleteMedia(int|string|Media $mediaId): void
     {

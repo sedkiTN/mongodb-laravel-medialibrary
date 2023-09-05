@@ -18,7 +18,7 @@ If you have a license for Media Library Pro, you should install `spatie/laravel-
 You need to publish the migration to create the `media` table:
 
 ```bash
-php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="sedkiTN\MediaLibrary\MediaLibraryServiceProvider" --tag="migrations"
 ```
 
 After that, you need to run migrations.
@@ -32,7 +32,7 @@ php artisan migrate
 Publishing the config file is optional:
 
 ```bash
-php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="config"
+php artisan vendor:publish --provider="sedkiTN\MediaLibrary\MediaLibraryServiceProvider" --tag="config"
 ```
 
 This is the default content of the config file:
@@ -72,7 +72,7 @@ return [
     /*
      * The fully qualified class name of the media model.
      */
-    'media_model' => Spatie\MediaLibrary\MediaCollections\Models\Media::class,
+    'media_model' => sedkiTN\MediaLibrary\MediaCollections\Models\Media::class,
 
     /*
      * The fully qualified class name of the model used for temporary uploads.
@@ -96,18 +96,18 @@ return [
     /*
      * This is the class that is responsible for naming generated files.
      */
-    'file_namer' => Spatie\MediaLibrary\Support\FileNamer\DefaultFileNamer::class,
+    'file_namer' => sedkiTN\MediaLibrary\Support\FileNamer\DefaultFileNamer::class,
 
     /*
      * The class that contains the strategy for determining a media file's path.
      */
-    'path_generator' => Spatie\MediaLibrary\Support\PathGenerator\DefaultPathGenerator::class,
+    'path_generator' => sedkiTN\MediaLibrary\Support\PathGenerator\DefaultPathGenerator::class,
 
     /*
      * When urls to files get generated, this class will be called. Use the default
      * if your files are stored locally above the site root or on s3.
      */
-    'url_generator' => Spatie\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator::class,
+    'url_generator' => sedkiTN\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator::class,
 
     /*
      * Whether to activate versioning when urls to files get generated.
@@ -163,12 +163,12 @@ return [
      * These generators will be used to create an image of media files.
      */
     'image_generators' => [
-        Spatie\MediaLibrary\Conversions\ImageGenerators\Image::class,
-        Spatie\MediaLibrary\Conversions\ImageGenerators\Webp::class,
-        Spatie\MediaLibrary\Conversions\ImageGenerators\Avif::class,
-        Spatie\MediaLibrary\Conversions\ImageGenerators\Pdf::class,
-        Spatie\MediaLibrary\Conversions\ImageGenerators\Svg::class,
-        Spatie\MediaLibrary\Conversions\ImageGenerators\Video::class,
+        sedkiTN\MediaLibrary\Conversions\ImageGenerators\Image::class,
+        sedkiTN\MediaLibrary\Conversions\ImageGenerators\Webp::class,
+        sedkiTN\MediaLibrary\Conversions\ImageGenerators\Avif::class,
+        sedkiTN\MediaLibrary\Conversions\ImageGenerators\Pdf::class,
+        sedkiTN\MediaLibrary\Conversions\ImageGenerators\Svg::class,
+        sedkiTN\MediaLibrary\Conversions\ImageGenerators\Video::class,
     ],
 
     /*
@@ -196,8 +196,8 @@ return [
      * your custom jobs extend the ones provided by the package.
      */
     'jobs' => [
-        'perform_conversions' => Spatie\MediaLibrary\Conversions\Jobs\PerformConversionsJob::class,
-        'generate_responsive_images' => Spatie\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob::class,
+        'perform_conversions' => sedkiTN\MediaLibrary\Conversions\Jobs\PerformConversionsJob::class,
+        'generate_responsive_images' => sedkiTN\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob::class,
     ],
 
     /*
@@ -205,7 +205,7 @@ return [
      * This is particularly useful when the url of the image is behind a firewall and
      * need to add additional flags, possibly using curl.
      */
-    'media_downloader' => Spatie\MediaLibrary\Downloaders\DefaultDownloader::class,
+    'media_downloader' => sedkiTN\MediaLibrary\Downloaders\DefaultDownloader::class,
 
     'remote' => [
         /*
@@ -229,7 +229,7 @@ return [
          *
          * https://docs.spatie.be/laravel-medialibrary/v10/advanced-usage/generating-responsive-images
          */
-        'width_calculator' => Spatie\MediaLibrary\ResponsiveImages\WidthCalculator\FileSizeOptimizedWidthCalculator::class,
+        'width_calculator' => sedkiTN\MediaLibrary\ResponsiveImages\WidthCalculator\FileSizeOptimizedWidthCalculator::class,
 
         /*
          * By default rendering media to a responsive image will add some javascript and a tiny placeholder.
@@ -241,7 +241,7 @@ return [
          * This class will generate the tiny placeholder used for progressive image loading. By default
          * the media library will use a tiny blurred jpg image.
          */
-        'tiny_placeholder_generator' => Spatie\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\Blurred::class,
+        'tiny_placeholder_generator' => sedkiTN\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\Blurred::class,
     ],
 
     /*

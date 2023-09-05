@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator;
+namespace sedkiTN\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator;
 
 interface TinyPlaceholderGenerator
 {

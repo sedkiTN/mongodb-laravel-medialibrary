@@ -9,8 +9,8 @@ To associate media with a model, the model must implement the following interfac
 namespace App\Models;
 
 use MongoDB\Laravel\Eloquent\Model;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
+use sedkiTN\MediaLibrary\HasMedia;
+use sedkiTN\MediaLibrary\InteractsWithMedia;
 
 class YourModel extends Model implements HasMedia
 {
@@ -24,7 +24,7 @@ To generate that thumbnail, you must add a conversion like this one to your mode
 
 ```php
 use Spatie\Image\Manipulations;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 
 public function registerMediaConversions(Media $media = null): void
 {

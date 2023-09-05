@@ -1,19 +1,19 @@
 <?php
 
-namespace Spatie\MediaLibrary;
+namespace sedkiTN\MediaLibrary;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\MediaCollections\FileAdder;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\Conversions\Conversion;
+use sedkiTN\MediaLibrary\MediaCollections\FileAdder;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * @mixin \MongoDB\Laravel\Eloquent\Model
  * @method void prepareToAttachMedia(Media $media, FileAdder $fileAdder)
  * @property bool $registerMediaConversionsUsingModelInstance
- * @property ?\Spatie\MediaLibrary\MediaCollections\MediaCollection $mediaCollections
+ * @property ?\sedkiTN\MediaLibrary\MediaCollections\MediaCollection $mediaCollections
  */
 interface HasMedia
 {

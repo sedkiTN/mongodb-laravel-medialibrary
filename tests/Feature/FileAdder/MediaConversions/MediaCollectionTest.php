@@ -1,10 +1,10 @@
 <?php
 
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileUnacceptableForCollection;
-use Spatie\MediaLibrary\MediaCollections\File;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithoutMediaConversions;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\FileUnacceptableForCollection;
+use sedkiTN\MediaLibrary\MediaCollections\File;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
+use sedkiTN\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithoutMediaConversions;
 
 it('will use the disk from a media collection', function () {
     $testModel = new class () extends TestModelWithConversion {

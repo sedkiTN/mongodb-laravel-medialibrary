@@ -1,19 +1,19 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections;
+namespace sedkiTN\MediaLibrary\MediaCollections;
 
 use Exception;
 use Illuminate\Contracts\Filesystem\Factory;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\Conversions\FileManipulator;
-use Spatie\MediaLibrary\MediaCollections\Events\MediaHasBeenAdded;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\File;
-use Spatie\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
-use Spatie\MediaLibrary\Support\RemoteFile;
+use sedkiTN\MediaLibrary\Conversions\ConversionCollection;
+use sedkiTN\MediaLibrary\Conversions\FileManipulator;
+use sedkiTN\MediaLibrary\MediaCollections\Events\MediaHasBeenAdded;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\Support\File;
+use sedkiTN\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
+use sedkiTN\MediaLibrary\Support\RemoteFile;
 
 class Filesystem
 {

@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\MediaLibrary\Conversions\ImageGenerators\Avif;
+use sedkiTN\MediaLibrary\Conversions\ImageGenerators\Avif;
 
 it('can convert a avif', function () {
     $imageGenerator = new Avif();

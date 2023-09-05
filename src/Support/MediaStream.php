@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support;
+namespace sedkiTN\MediaLibrary\Support;
 
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use ZipStream\Option\Archive as ArchiveOptions;
 use ZipStream\ZipStream;

@@ -1,8 +1,8 @@
 <?php
 
-use Spatie\MediaLibrary\MediaLibraryServiceProvider;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestCustomMediaModel;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use sedkiTN\MediaLibrary\MediaLibraryServiceProvider;
+use sedkiTN\MediaLibrary\Tests\TestSupport\TestModels\TestCustomMediaModel;
+use sedkiTN\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
 
 beforeEach(function () {
     addMedia($this->testModel);

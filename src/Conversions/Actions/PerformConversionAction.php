@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions\Actions;
+namespace sedkiTN\MediaLibrary\Conversions\Actions;
 
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Conversions\Events\ConversionHasBeenCompleted;
-use Spatie\MediaLibrary\Conversions\Events\ConversionWillStart;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\ResponsiveImages\ResponsiveImageGenerator;
+use sedkiTN\MediaLibrary\Conversions\Conversion;
+use sedkiTN\MediaLibrary\Conversions\Events\ConversionHasBeenCompleted;
+use sedkiTN\MediaLibrary\Conversions\Events\ConversionWillStart;
+use sedkiTN\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
+use sedkiTN\MediaLibrary\MediaCollections\Filesystem;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\ResponsiveImages\ResponsiveImageGenerator;
 
 class PerformConversionAction
 {

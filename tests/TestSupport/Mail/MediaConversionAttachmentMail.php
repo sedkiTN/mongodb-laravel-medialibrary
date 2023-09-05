@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport\Mail;
+namespace sedkiTN\MediaLibrary\Tests\TestSupport\Mail;
 
 use Illuminate\Mail\Mailable;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 
 class MediaConversionAttachmentMail extends Mailable
 {

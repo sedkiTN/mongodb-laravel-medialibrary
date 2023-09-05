@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Models\Observers;
+namespace sedkiTN\MediaLibrary\MediaCollections\Models\Observers;
 
-use Spatie\MediaLibrary\Conversions\FileManipulator;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\Conversions\FileManipulator;
+use sedkiTN\MediaLibrary\MediaCollections\Filesystem;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 
 class MediaObserver
 {

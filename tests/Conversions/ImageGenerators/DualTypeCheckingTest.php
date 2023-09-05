@@ -1,7 +1,7 @@
 <?php
 
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Tests\TestSupport\TestImageGenerator;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\Tests\TestSupport\TestImageGenerator;
 
 it('can convert an image with a valid extension and mime type', function () {
     $generator = new TestImageGenerator();

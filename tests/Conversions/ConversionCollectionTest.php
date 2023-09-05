@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
+use sedkiTN\MediaLibrary\Conversions\ConversionCollection;
 
 beforeEach(function () {
     $media = $this->testModelWithConversion

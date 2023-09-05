@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport\TestModels;
+namespace sedkiTN\MediaLibrary\Tests\TestSupport\TestModels;
 
 use MongoDB\Laravel\Eloquent\Model;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
+use sedkiTN\MediaLibrary\HasMedia;
+use sedkiTN\MediaLibrary\InteractsWithMedia;
 
 class TestModelWithoutMediaConversions extends Model implements HasMedia
 {

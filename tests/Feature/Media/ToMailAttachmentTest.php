@@ -2,11 +2,11 @@
 
 use Illuminate\Mail\Attachment;
 use Illuminate\Support\Facades\Mail;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Tests\TestSupport\Mail\AttachmentMail;
-use Spatie\MediaLibrary\Tests\TestSupport\Mail\InvalidMediaConversionAttachmentMail;
-use Spatie\MediaLibrary\Tests\TestSupport\Mail\MediaConversionAttachmentMail;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\Tests\TestSupport\Mail\AttachmentMail;
+use sedkiTN\MediaLibrary\Tests\TestSupport\Mail\InvalidMediaConversionAttachmentMail;
+use sedkiTN\MediaLibrary\Tests\TestSupport\Mail\MediaConversionAttachmentMail;
 
 beforeEach(function () {
     $this->testModelWithConversion

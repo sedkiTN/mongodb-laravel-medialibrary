@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections;
+namespace sedkiTN\MediaLibrary\MediaCollections;
 
 use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
-use Spatie\MediaLibrary\Support\RemoteFile;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
+use sedkiTN\MediaLibrary\Support\RemoteFile;
 use Spatie\MediaLibraryPro\Dto\PendingMediaItem;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

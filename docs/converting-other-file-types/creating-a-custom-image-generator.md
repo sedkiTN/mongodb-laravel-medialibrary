@@ -11,12 +11,12 @@ In the following example we'll create a custom generator that can convert a Powe
 
 ## Creating a custom image generator
 
-The first step for creating a custom generator is to create a class that extends `Spatie\MediaLibrary\Conversions\ImageGenerators\ImageGenerator`:
+The first step for creating a custom generator is to create a class that extends `sedkiTN\MediaLibrary\Conversions\ImageGenerators\ImageGenerator`:
 
 ```php
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\ImageGenerator;
+use sedkiTN\MediaLibrary\Conversions\Conversion;
+use sedkiTN\MediaLibrary\Conversions\ImageGenerators\ImageGenerator;
 
 class PowerPoint extends ImageGenerator
 {
@@ -97,8 +97,8 @@ If the generator only needs to be applied to one of your models you can override
 namespace App\Models;
 
 use MongoDB\Laravel\Eloquent\Model;
-use Spatie\MediaLibrary\InteractsWithMedia;
-use Spatie\MediaLibrary\Interfaces\HasMedia;
+use sedkiTN\MediaLibrary\InteractsWithMedia;
+use sedkiTN\MediaLibrary\Interfaces\HasMedia;
 
 class News extends Model implements HasMedia
 {

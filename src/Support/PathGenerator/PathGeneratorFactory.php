@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support\PathGenerator;
+namespace sedkiTN\MediaLibrary\Support\PathGenerator;
 
 use Illuminate\Database\Eloquent\Relations\Relation;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidPathGenerator;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\InvalidPathGenerator;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 
 class PathGeneratorFactory
 {

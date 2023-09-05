@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport;
+namespace sedkiTN\MediaLibrary\Tests\TestSupport;
 
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Support\FileNamer\FileNamer;
+use sedkiTN\MediaLibrary\Conversions\Conversion;
+use sedkiTN\MediaLibrary\Support\FileNamer\FileNamer;
 
 class RenameOriginalFileNamer extends FileNamer
 {

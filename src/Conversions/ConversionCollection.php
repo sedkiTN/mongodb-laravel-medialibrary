@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions;
+namespace sedkiTN\MediaLibrary\Conversions;
 
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Spatie\Image\Manipulations;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\Image\Manipulations;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 
 /**
  * @template TKey of array-key
@@ -56,7 +56,7 @@ class ConversionCollection extends Collection
             return;
         }
 
-        /** @var \Spatie\MediaLibrary\HasMedia $model */
+        /** @var \sedkiTN\MediaLibrary\HasMedia $model */
         $model = new $modelName();
 
         /*

@@ -10,8 +10,8 @@ To do that, you can specify your own Media Downloader by creating a class that i
 For example, consider the following example which uses curl with custom headers to fetch the media.
 
 ```php
-use Spatie\MediaLibrary\Downloaders\Downloader;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
+use sedkiTN\MediaLibrary\Downloaders\Downloader;
+use sedkiTN\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
 
 class CustomDownloader implements Downloader {
 

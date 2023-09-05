@@ -29,9 +29,9 @@ To override this default folder structure, a class that conforms to the `PathGen
 Let's take a look at the interface:
 
 ```php
-namespace Spatie\MediaLibrary\Support\PathGenerator;
+namespace sedkiTN\MediaLibrary\Support\PathGenerator;
 
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 
 interface PathGenerator
 {

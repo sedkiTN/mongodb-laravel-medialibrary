@@ -1,16 +1,16 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions;
+namespace sedkiTN\MediaLibrary\Conversions;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\Conversions\Actions\PerformConversionAction;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
-use Spatie\MediaLibrary\Conversions\Jobs\PerformConversionsJob;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob;
-use Spatie\MediaLibrary\Support\TemporaryDirectory;
+use sedkiTN\MediaLibrary\Conversions\Actions\PerformConversionAction;
+use sedkiTN\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
+use sedkiTN\MediaLibrary\Conversions\Jobs\PerformConversionsJob;
+use sedkiTN\MediaLibrary\MediaCollections\Filesystem;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob;
+use sedkiTN\MediaLibrary\Support\TemporaryDirectory;
 
 class FileManipulator
 {

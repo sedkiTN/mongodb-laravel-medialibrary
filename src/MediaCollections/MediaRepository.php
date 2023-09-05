@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections;
+namespace sedkiTN\MediaLibrary\MediaCollections;
 
 use Closure;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as DbCollection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\HasMedia;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 
 class MediaRepository
 {

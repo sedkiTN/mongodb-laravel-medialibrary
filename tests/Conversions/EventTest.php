@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Event;
-use Spatie\MediaLibrary\Conversions\Events\ConversionHasBeenCompleted;
-use Spatie\MediaLibrary\Conversions\Events\ConversionWillStart;
-use Spatie\MediaLibrary\MediaCollections\Events\CollectionHasBeenCleared;
+use sedkiTN\MediaLibrary\Conversions\Events\ConversionHasBeenCompleted;
+use sedkiTN\MediaLibrary\Conversions\Events\ConversionWillStart;
+use sedkiTN\MediaLibrary\MediaCollections\Events\CollectionHasBeenCleared;
 
 beforeEach(function () {
     Event::fake();

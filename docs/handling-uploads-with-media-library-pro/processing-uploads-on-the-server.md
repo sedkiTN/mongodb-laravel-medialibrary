@@ -389,7 +389,7 @@ Here's an example where we will create 300x300 previews
 
 ```php
 use Spatie\MediaLibraryPro\Models\TemporaryUpload;
-use Spatie\MediaLibrary\Conversions\Conversion;
+use sedkiTN\MediaLibrary\Conversions\Conversion;
 use Spatie\Image\Manipulations;
 
 // in a service provider

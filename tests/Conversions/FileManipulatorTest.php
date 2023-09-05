@@ -1,7 +1,7 @@
 <?php
 
-use Spatie\MediaLibrary\Conversions\Actions\PerformManipulationsAction;
-use Spatie\MediaLibrary\Conversions\Conversion;
+use sedkiTN\MediaLibrary\Conversions\Actions\PerformManipulationsAction;
+use sedkiTN\MediaLibrary\Conversions\Conversion;
 
 beforeEach(function () {
     $this->conversionName = 'test';

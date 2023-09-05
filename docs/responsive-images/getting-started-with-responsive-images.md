@@ -113,10 +113,10 @@ Here's an example where we define a conversion to make a greyscale version and g
 ```php
 namespace App;
 
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use sedkiTN\MediaLibrary\HasMedia;
+use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 use MongoDB\Laravel\Eloquent\Model;
-use Spatie\MediaLibrary\InteractsWithMedia;
+use sedkiTN\MediaLibrary\InteractsWithMedia;
 
 class YourModel extends Model implements HasMedia
 {

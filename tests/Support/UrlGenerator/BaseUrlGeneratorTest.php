@@ -1,8 +1,8 @@
 <?php
 
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\Support\PathGenerator\DefaultPathGenerator;
-use Spatie\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator;
+use sedkiTN\MediaLibrary\Conversions\ConversionCollection;
+use sedkiTN\MediaLibrary\Support\PathGenerator\DefaultPathGenerator;
+use sedkiTN\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator;
 
 beforeEach(function () {
     $this->config = app('config');
