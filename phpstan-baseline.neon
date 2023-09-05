@@ -1,10 +1,10 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Access to an undefined property Spatie\\\\MediaLibrary\\\\HasMedia\\:\\:#"
+			message: "#^Access to an undefined property sedkiTN\\\\MediaLibrary\\\\HasMedia\\:\\:#"
 
 		-
-			message: "#^Call to an undefined method Spatie\\\\MediaLibrary\\\\Support\\\\UrlGenerator\\\\UrlGenerator\\:\\:getPathRelativeToRoot\\(\\)\\.$#"
+			message: "#^Call to an undefined method sedkiTN\\\\MediaLibrary\\\\Support\\\\UrlGenerator\\\\UrlGenerator\\:\\:getPathRelativeToRoot\\(\\)\\.$#"
 			count: 1
 			path: src/MediaCollections/Models/Media.php
 

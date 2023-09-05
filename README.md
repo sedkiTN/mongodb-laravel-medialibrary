@@ -2,9 +2,9 @@
 
 # Associate files with Eloquent models
 
-[![Latest Version](https://img.shields.io/github/release/spatie/laravel-medialibrary.svg?style=flat-square)](https://github.com/spatie/laravel-medialibrary/releases)
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/spatie/laravel-medialibrary/run-tests.yml?branch=master&style=flat-square&label=tests)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-medialibrary.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-medialibrary)
+[![Latest Version](https://img.shields.io/github/release/sedkitn/mongodb-laravel-medialibrary.svg?style=flat-square)](https://github.com/sedkitn/mongodb-laravel-medialibrary/releases)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/sedkitn/mongodb-laravel-medialibrary/run-tests.yml?branch=master&style=flat-square&label=tests)
+[![Total Downloads](https://img.shields.io/packagist/dt/sedkitn/mongodb-laravel-medialibrary.svg?style=flat-square)](https://packagist.org/packages/sedkitn/mongodb-laravel-medialibrary)
 
 This package can associate all sorts of files with Eloquent models. It provides a
 simple API to work with. To learn all about it, head over to [the extensive documentation](https://spatie.be/docs/laravel-medialibrary).

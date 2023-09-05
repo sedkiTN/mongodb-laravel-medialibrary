@@ -1,10 +1,11 @@
 {
-    "name": "spatie/laravel-medialibrary",
+    "name": "sedkitn/mongodb-laravel-medialibrary",
     "description": "Associate files with Eloquent models",
     "license": "MIT",
     "keywords": [
-        "spatie",
-        "laravel-medialibrary",
+        "sedkiTN",
+        "mongodb-laravel-medialibrary",
+        "mongodb",
         "media",
         "conversion",
         "images",
@@ -18,9 +19,14 @@
             "email": "freek@spatie.be",
             "homepage": "https://spatie.be",
             "role": "Developer"
+        },
+        {
+            "name": "Sedki BEN ALI",
+            "email": "sedki_ben_ali@outlook.com",
+            "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/spatie/laravel-medialibrary",
+    "homepage": "https://github.com/sedkiTN/mongodb-laravel-medialibrary",
     "require": {
         "php": "^8.0",
         "ext-exif": "*",
@@ -67,12 +73,12 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Spatie\\MediaLibrary\\": "src"
+            "sedkiTN\\MediaLibrary\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\MediaLibrary\\Tests\\": "tests"
+            "sedkiTN\\MediaLibrary\\Tests\\": "tests"
         }
     },
     "config": {
@@ -85,7 +91,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\MediaLibrary\\MediaLibraryServiceProvider"
+                "sedkiTN\\MediaLibrary\\MediaLibraryServiceProvider"
             ]
         }
     },

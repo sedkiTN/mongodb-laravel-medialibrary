@@ -3,12 +3,12 @@ title: Base installation
 weight: 4
 ---
 
-Media Library can be installed via Composer:
+MongoDB Media Library can be installed via Composer:
 
 If you only use the base package issue this command:
 
 ```bash
-composer require "spatie/laravel-medialibrary:^10.0.0"
+composer require "sedkitn/mongodb-laravel-medialibrary:^10.0.0"
 ```
 
 If you have a license for Media Library Pro, you should install `spatie/laravel-media-library-pro` instead. Please refer to our [Media Library Pro installation instructions](https://spatie.be/docs/laravel-medialibrary/v10/handling-uploads-with-media-library-pro/installation) to continue.
