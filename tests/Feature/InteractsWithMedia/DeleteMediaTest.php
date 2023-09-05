@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\File;
 use sedkiTN\MediaLibrary\MediaLibraryServiceProvider;
 use sedkiTN\MediaLibrary\Tests\TestSupport\TestModels\TestCustomMediaModel;
 use sedkiTN\MediaLibrary\Tests\TestSupport\TestModels\TestModel;

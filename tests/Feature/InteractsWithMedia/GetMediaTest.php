@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Collection;
 use sedkiTN\MediaLibrary\MediaCollections\MediaRepository;
 use sedkiTN\MediaLibrary\MediaCollections\Models\Media;

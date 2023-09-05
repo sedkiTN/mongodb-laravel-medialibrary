@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\File;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use sedkiTN\MediaLibrary\MediaCollections\Models\Media;
 use sedkiTN\MediaLibrary\Tests\TestSupport\TestModels\TestModel;

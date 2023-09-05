@@ -86,27 +86,27 @@ trait InteractsWithMedia
         return app(FileAdderFactory::class)->createFromDisk($this, $key, $disk ?: config('filesystems.default'));
     }
 
-    public function addFromMediaLibraryRequest(?array $mediaLibraryRequestItems): PendingMediaLibraryRequestHandler
-    {
-        MediaLibraryPro::ensureInstalled();
+    // public function addFromMediaLibraryRequest(?array $mediaLibraryRequestItems): PendingMediaLibraryRequestHandler
+    // {
+    //     MediaLibraryPro::ensureInstalled();
 
-        return new PendingMediaLibraryRequestHandler(
-            $mediaLibraryRequestItems ?? [],
-            $this,
-            $preserveExisting = true
-        );
-    }
+    //     return new PendingMediaLibraryRequestHandler(
+    //         $mediaLibraryRequestItems ?? [],
+    //         $this,
+    //         $preserveExisting = true
+    //     );
+    // }
 
-    public function syncFromMediaLibraryRequest(?array $mediaLibraryRequestItems): PendingMediaLibraryRequestHandler
-    {
-        MediaLibraryPro::ensureInstalled();
+    // public function syncFromMediaLibraryRequest(?array $mediaLibraryRequestItems): PendingMediaLibraryRequestHandler
+    // {
+    //     MediaLibraryPro::ensureInstalled();
 
-        return new PendingMediaLibraryRequestHandler(
-            $mediaLibraryRequestItems ?? [],
-            $this,
-            $preserveExisting = false
-        );
-    }
+    //     return new PendingMediaLibraryRequestHandler(
+    //         $mediaLibraryRequestItems ?? [],
+    //         $this,
+    //         $preserveExisting = false
+    //     );
+    // }
 
     /**
      * Add multiple files from a request by keys.
