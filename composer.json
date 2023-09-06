@@ -74,7 +74,8 @@
     "autoload": {
         "psr-4": {
             "sedkiTN\\MediaLibrary\\": "src",
-            "Spatie\\Image\\": "vendor/spatie/image/src"
+            "Spatie\\Image\\": "vendor/spatie/image/src",
+            "Spatie\\Image\\Manipulations\\": "vendor/spatie/image/src/Manipulations"
         }
     },
     "autoload-dev": {
@@ -83,7 +84,8 @@
         ],
         "psr-4": {
             "sedkiTN\\MediaLibrary\\Tests\\": "tests",
-            "Spatie\\Image\\": "vendor/spatie/image/src"
+            "Spatie\\Image\\": "vendor/spatie/image/src",
+            "Spatie\\Image\\Manipulations\\": "vendor/spatie/image/src/Manipulations"
         }
     },
     "config": {
