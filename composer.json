@@ -74,7 +74,7 @@
     "autoload": {
         "psr-4": {
             "sedkiTN\\MediaLibrary\\": "src",
-            "Spatie\\Image": "vendor/spatie/image/src"
+            "Spatie\\Image\\": "vendor/spatie/image/src"
         }
     },
     "autoload-dev": {
@@ -101,5 +101,19 @@
         "baseline": "vendor/bin/phpstan analyse --generate-baseline",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
         "test": "vendor/bin/pest"
-    }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "spatie/image",
+                "version": "2.2.7",
+                "source": {
+                    "url": "https://github.com/spatie/image",
+                    "type": "git",
+                    "reference": "origin/main"
+                }
+            }
+        }
+    ]
 }
