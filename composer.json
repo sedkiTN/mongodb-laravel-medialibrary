@@ -28,7 +28,7 @@
     ],
     "homepage": "https://github.com/sedkiTN/mongodb-laravel-medialibrary",
     "require": {
-        "php": "^8.2",
+        "php": "^8.1",
         "ext-exif": "*",
         "ext-fileinfo": "*",
         "ext-json": "*",
@@ -79,7 +79,7 @@
     },
     "autoload-dev": {
         "classmap": [
-            "vendor/spatie/image/src/Manipulations.php"
+            "src/"
         ],
         "psr-4": {
             "sedkiTN\\MediaLibrary\\Tests\\": "tests",
