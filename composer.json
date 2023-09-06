@@ -75,7 +75,7 @@
         "psr-4": {
             "sedkiTN\\MediaLibrary\\": "src",
             "Spatie\\Image\\": "vendor/spatie/image/src",
-            "Spatie\\TemporaryDirectory\\": "vendor/spatie/temporarydirectory/src"
+            "Spatie\\TemporaryDirectory\\": "vendor/spatie/temporary-directory/src"
         }
     },
     "autoload-dev": {
