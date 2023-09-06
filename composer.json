@@ -78,8 +78,12 @@
         }
     },
     "autoload-dev": {
+        "classmap": [
+            "vendor/spatie/image/src/Manipulations.php"
+        ],
         "psr-4": {
-            "sedkiTN\\MediaLibrary\\Tests\\": "tests"
+            "sedkiTN\\MediaLibrary\\Tests\\": "tests",
+            "Spatie\\Image\\": "vendor/spatie/image/src"
         }
     },
     "config": {
