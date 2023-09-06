@@ -73,7 +73,8 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "sedkiTN\\MediaLibrary\\": "src"
+            "sedkiTN\\MediaLibrary\\": "src",
+            "Spatie\\Image": "vendor/spatie/image/src"
         }
     },
     "autoload-dev": {
